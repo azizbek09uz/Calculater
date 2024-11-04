@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculater</title>
+    <link rel="stylesheet" href="./css/style..css">
+</head>
+<body>
+    <div class="container">
+        <div class="calculater">
+            <div class="display">
+                <div class="flex">
+                    <input class="input" id="display" type="" value="">
+                </div>
+            </div>
+            <div>
+                <input type="button" id="AC" value="AC" onclick="clearDisplay()">
+                <input type="button" value="DE" onclick="deleteLast()">
+                <input class="append" type="button" value="." onclick="appendToDispaly('.')">
+                <input class="append" type="button" value="/" onclick="appendToDispaly('/')">
+            </div>
+            <div>
+                <input class="append" type="button" value="7" onclick="appendToDispaly('7')">
+                <input class="append" type="button" value="8" onclick="appendToDispaly('8')">   1
+                <input class="append" type="button" value="9" onclick="appendToDispaly('9')">
+                <input class="append" type="button" value="*" onclick="appendToDispaly('*')">
+            </div>
+            <div>
+                <input class="append" type="button" value="4" onclick="appendToDispaly('4')">
+                <input class="append" type="button" value="5" onclick="appendToDispaly('5')">
+                <input class="append" type="button" value="6" onclick="appendToDispaly('6')">
+                <input class="append" type="button" value="-" onclick="appendToDispaly('-')">
+            </div>
+            <div>
+                <input class="append" type="button" value="1" onclick="appendToDispaly('1')">
+                <input class="append" type="button" value="2" onclick="appendToDispaly('2')">
+                <input class="append" type="button" value="3" onclick="appendToDispaly('3')">
+                <input class="append" type="button" value="+" onclick="appendToDispaly('+')">
+            </div>
+            <div style="display: flex;">
+                <input class="append" type="button" value="00" onclick="appendToDispaly('00')">
+                <input class="append" type="button" value="0" onclick="appendToDispaly('0')">
+                <input type="button" value="=" class="equal" onclick="calculate()">
+            </div>
+        </div>
+    </div>
+
+
+    <script src="./js/upp.js"></script>
+</body>
+</html>
