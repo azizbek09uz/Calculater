@@ -28,7 +28,7 @@ function clearDisplay() {
 
 function deleteLast() {  
     display.value = display.value.slice(0, -1);  
-    lastInput = display.value.charAt(display.value.length - 1) || ''; // Oxirgi kiritishni yangilash  
+    lastInput = display.value.charAt(display.value.length - 1) || '';
 }  
 
 function calculate() {  
@@ -38,6 +38,5 @@ function calculate() {
         lastInput = result.toString().slice(-1);
     } catch (error) {  
         display.value = 'Error';  
-        display.style.color = 'red';  
     }  
 } 
